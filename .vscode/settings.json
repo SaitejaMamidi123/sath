@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sf": true,
+    "**/.sfdx": true
+  },
+  "xml.preferences.showSchemaDocumentationType": "none",
+  "salesforcedx-vscode-apex.java.home": "C:\\Users\\SA20559323\\Saiteja\\NEW\\Learning\\.tools\\java\\jdk-17.0.19+10"
+}

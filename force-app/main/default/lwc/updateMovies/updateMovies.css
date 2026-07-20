@@ -1,0 +1,101 @@
+/* Layout and grid */
+.top {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.slds-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slds-col {
+    flex: 1; /* Ensures both columns take equal space */
+}
+
+/* Form fields */
+.a1, .a2, .a3, .a4, .a5 {
+    background: #dad8d3;
+    border: 1.5px solid #ffe066;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(255, 224, 102, 0.15);
+    padding: 8px 12px;
+    transition: box-shadow 0.2s;
+}
+.a1:focus-within, .a2:focus-within, .a3:focus-within, .a4:focus-within, .a5:focus-within {
+    box-shadow: 0 0 0 3px #ffe066;
+}
+.a1:hover, .a2:hover, .a3:hover, .a4:hover, .a5:hover {
+    box-shadow: 0 0 0 3px #ffe066;
+}
+.a1:focus, .a2:focus, .a3:focus, .a4:focus, .a5:focus {
+
+    box-shadow: 0 0 0 3px #ffe066;
+}
+.a6 {
+    /* Add spacing if needed for button */
+}
+.s1 {
+    background: #dad8d3;
+    border: 1.5px solid #3570b7;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(255, 224, 102, 0.15);
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.2s;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #b40410;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* Search results */
+.search-results {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+.search-result-item {
+    margin-bottom: 4px;
+    cursor: pointer;
+    background: #c99292;
+}
+.search-result-item:hover {
+    border: 2px solid #e68a3f;
+}
+.selected-prequel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #097619;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown */
+.slds-dropdown {
+    margin-left: 25.5%;
+    max-width: 49%;
+    margin-top: -3px;
+}
+
+/* Card background */
+.custom-bg {
+    background-color: #e6d345;
+    padding: 16px;
+    border-radius: 8px;
+    color: #ab1111;
+}
+
+/* Font enhancement */
+:host, .custom-bg {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

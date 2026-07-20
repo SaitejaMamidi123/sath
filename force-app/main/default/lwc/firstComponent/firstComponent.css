@@ -1,0 +1,32 @@
+.text
+{
+    background-color: orange;
+    font-size: 10px;
+    margin-bottom: 10px;
+
+}
+.date
+{
+    background-color: white;
+    margin-bottom: 10px;
+
+}
+.email
+{
+    background-color: green;
+    margin-bottom: 10px;
+    font-size: large;
+
+}
+.check
+{
+    background-color: yellow;
+    margin-bottom: 10px;
+
+}
+.toggle
+{
+    background-color: red;
+    
+    
+}

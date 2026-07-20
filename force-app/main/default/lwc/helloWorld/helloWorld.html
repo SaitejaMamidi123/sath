@@ -1,0 +1,22 @@
+<template>
+   
+    <lightning-card  title="Head">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter some text" onkeyup={handleChange}></lightning-input>
+            <div>{fullname} is the course of a {title}</div> 
+        </div>    
+    </lightning-card>
+    <lightning-card  title="Tracks">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter City name text" onkeyup={trackHandler}></lightning-input>
+            <div>{address.city} is my new city  </div> 
+        </div>    
+    </lightning-card>
+    <lightning-card  title="Getter">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter firstuser name " onkeyup={userHandler}></lightning-input>
+            <div>First User is {firstUser}</div>
+            <div>Multiplication Result is {multiply}</div>
+        </div>    
+    </lightning-card>
+</template>

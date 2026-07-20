@@ -1,0 +1,56 @@
+<template>
+    <lightning-card title="Create New Account" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+            <!---Form Layout using lightning-layout for better page Structure--->
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item size="12" medium-device-size="6" small-device-size="12">
+                    <lightning-input
+                    label="Account Name"
+                    value={accountName}
+                    onchange={handleInputChange}
+                    data-id="accountName">
+                    </lightning-input>
+                </lightning-layout-item>
+    
+                <lightning-layout-item size="12" medium-device-size="6" small-device-size="12">
+                    <lightning-input
+                    label="Phone"
+                    value={phone}
+                    onchange={handleInputChange}
+                    data-id="phone">
+                    </lightning-input>
+                </lightning-layout-item>
+    
+                <lightning-layout-item size="12" medium-device-size="6" small-device-size="12">
+                    <lightning-input
+                    label="Website"
+                    value={website}
+                    onchange={handleInputChange}
+                    data-id="website">
+                    </lightning-input>
+                </lightning-layout-item>
+    
+                <lightning-layout-item size="12" medium-device-size="6" small-device-size="12">
+                    <lightning-combobox
+                        label="Industry"
+                        placeholder=" Select Industry"
+                        options={industryOptions}
+                        value={industry}
+                        onchange={handleInputChange}
+                        data-id="industry">
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+    
+            <!-- Button at the bottom to submit the form--->
+            <div class="slds-m-top-medium">
+                <lightning-button
+                   label="Create Account"
+                   variant="brand"
+                   onclick={createAccount}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>

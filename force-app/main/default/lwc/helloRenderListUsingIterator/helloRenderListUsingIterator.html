@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Template Iterator" icon-name="custom:custom14">
+    <template iterator:con={contacts}>
+    <div if:true={con.first} key={con.value.Id} class="list-first"></div>
+    <li key={con.value.Id}>
+    {con.value.Name}, {con.value.Id}, {con.value.Title}
+    <div if:true={con.last} class="list-last"></div>
+    </li>
+    </template>
+    </lightning-card>
+    </template>

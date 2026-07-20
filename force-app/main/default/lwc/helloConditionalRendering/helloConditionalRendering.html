@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Conditional Rendering Example">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Show Data" onclick={renderHandler}></lightning-button>
+            <template lwc:if={isVisible}>
+                <p>The content is visible!</p>
+            </template>
+            <template lwc:else>
+                <p>The content is hidden click the button.</p>
+            </template>                       
+        </div>
+        <lightning-input type="text"  onkeyup={handleChange}></lightning-input>
+        <template lwc:if={Hello}>
+            <p>Hurray! you have entered hello</p>
+        </template>
+    </lightning-card>
+    
+</template>
