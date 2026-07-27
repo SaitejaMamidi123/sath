@@ -3,7 +3,7 @@ public class Demo {
     public static void oppCreateForAcc(){
 
         // List<Account> accList = [Select id, name from account where name = 'Saiteja12345'];
-        
+        // pull to the org
         List<opportunity> oppList = new List<opportunity>();
     	List<Account> accList = [Select id, name from account where name = 'Saiteja12345'];
         
