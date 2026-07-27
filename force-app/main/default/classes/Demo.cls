@@ -1,6 +1,8 @@
 public class Demo {
     
     public static void oppCreateForAcc(){
+
+        // List<Account> accList = [Select id, name from account where name = 'Saiteja12345'];
         
         List<opportunity> oppList = new List<opportunity>();
     	List<Account> accList = [Select id, name from account where name = 'Saiteja12345'];
